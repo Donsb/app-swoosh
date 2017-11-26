@@ -9,7 +9,13 @@
 import UIKit
 
 class LeagueVC: UIViewController {
-
+    
+    // Next Button Pressed.
+    @IBAction func onNextTapped(_ sender: Any) {
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
