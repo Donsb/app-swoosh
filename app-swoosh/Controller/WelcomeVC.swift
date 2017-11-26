@@ -14,9 +14,6 @@ class WelcomeVC: UIViewController {
      IBOutlets
      */
     
-    @IBOutlet weak var swoosh: UIImageView!
-    @IBOutlet weak var BgImg: UIImageView!
-    
     
     
     override func viewDidLoad() {
