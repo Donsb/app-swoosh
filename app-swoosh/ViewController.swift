@@ -24,8 +24,7 @@ class ViewController: UIViewController {
          Add "Pixel Perfect".
          This is controlling constraints from your code.
          */
-        
-        swoosh.frame = CGRect(x: view.frame.size.width / 2 - swoosh.frame.size.width / 2, y: 50, width: swoosh.frame.size.width, height: swoosh.frame.size.height)
+        //swoosh.frame = CGRect(x: view.frame.size.width / 2 - swoosh.frame.size.width / 2, y: 50, width: swoosh.frame.size.width, height: swoosh.frame.size.height)
         /*
          View is the UIViewController's View.
          frame is the position and size.
@@ -35,9 +34,11 @@ class ViewController: UIViewController {
          the middle.  The first line alone would only put the top/left corner of Swoosh in the middle.
          So, we place it in the middle, and then subtract the one half of swoosh so IT is in the middle.
          */
+        //BgImg.frame = view.frame
+        /*
+         Make the image the exact size of the View.
+         */
         
-        BgImg.frame = view.frame
-        // Make the image the exact size of the View.
     }
 
     override func didReceiveMemoryWarning() {
