@@ -45,7 +45,36 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    /*
+     Functions
+     */
+    
+    // Back Button for Page 2-> SkillVC.
+    @IBAction func unwindFromSkillVC(unwindSegue: UIStoryboardSegue) {
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
