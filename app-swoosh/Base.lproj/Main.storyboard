@@ -24,9 +24,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="bK8-E1-MSh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeScreenBG" translatesAutoresizingMaskIntoConstraints="NO" id="bK8-E1-MSh">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9lX-EB-3Rc">
                                 <rect key="frame" x="122" y="44" width="130" height="36"/>
@@ -64,6 +63,12 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bK8-E1-MSh" secondAttribute="bottom" id="Nnb-t9-DYq"/>
+                            <constraint firstItem="bK8-E1-MSh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jUK-gr-6Cr"/>
+                            <constraint firstItem="bK8-E1-MSh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mXp-5p-gHw"/>
+                            <constraint firstItem="bK8-E1-MSh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ue4-jL-gkd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
