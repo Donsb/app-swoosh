@@ -10,22 +10,32 @@ import UIKit
 
 class LeagueVC: UIViewController {
     
-    // Next Button Pressed.
-    @IBAction func onNextTapped(_ sender: Any) {
-    }
     
-    
-    
+    // View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
+    // Did receive Memory Warning
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    /*
+     Functions
+     */
+    
+    // Next Button Pressed.  Segue to SkillVC View Controller.
+    @IBAction func onNextTapped(_ sender: Any) {
+        performSegue(withIdentifier: "SkillVCSegue", sender: self)
+    }
+    
+    
+    
+
     
 
     /*

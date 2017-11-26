@@ -207,6 +207,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="edC-4u-IgK"/>
                     </view>
+                    <connections>
+                        <segue destination="8Dg-rC-Od1" kind="show" identifier="skillVCSegue" id="LTg-2t-nAB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="129-Qy-cxC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="xhm-vX-2XE" userLabel="Exit" sceneMemberID="exit"/>
