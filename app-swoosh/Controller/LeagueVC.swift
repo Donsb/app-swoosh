@@ -30,37 +30,48 @@ class LeagueVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
     /*
      Functions
      */
+    
     
     // Next Button Pressed.  Segue to SkillVC View Controller.
     @IBAction func onNextTapped(_ sender: Any) {
         performSegue(withIdentifier: "SkillVCSegue", sender: self)
     }
+    // END Next Button Pressed.
+    
     
     // Mens Button Pressed.
     @IBAction func mensTapped(_ sender: Any) {
-        
-        player.desiredLeague = "mens"
-        // Enable Next Button.
-        
+        selectLeague(leagueType: "mens")
     }
+    // END Mens Button Pressed.
+    
     
     // Womens Button Pressed.
     @IBAction func womensTapped(_ sender: Any) {
-        
-        player.desiredLeague = "womens"
+        selectLeague(leagueType: "womens")
     }
+    // END Womens Button Pressed.
+    
     
     // Co-Ed Button Pressed.
     @IBAction func coEdTapped(_ sender: Any) {
-        
-        player.desiredLeague = "coed"
+        selectLeague(leagueType: "coed")
     }
+    // End Co-Ed Button Pressed.
     
     
-
+    // Select League Function-> Function to set league selected and Enable the Next Button.
+    func selectLeague(leagueType: String) {
+        player.desiredLeague = leagueType
+        nextBtn.isEnabled = true
+    }
+    // END Select League Function.
+    
+    
     /*
     // MARK: - Navigation
 
