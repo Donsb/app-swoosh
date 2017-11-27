@@ -39,39 +39,40 @@ class LeagueVC: UIViewController {
     // Next Button Pressed.  Segue to SkillVC View Controller.
     @IBAction func onNextTapped(_ sender: Any) {
         performSegue(withIdentifier: "SkillVCSegue", sender: self)
-    }
-    // END Next Button Pressed.
+    } // END Next Button Pressed.
     
     
     // Mens Button Pressed.
     @IBAction func mensTapped(_ sender: Any) {
         selectLeague(leagueType: "mens")
-    }
-    // END Mens Button Pressed.
+    } // END Mens Button Pressed.
     
     
     // Womens Button Pressed.
     @IBAction func womensTapped(_ sender: Any) {
         selectLeague(leagueType: "womens")
-    }
-    // END Womens Button Pressed.
+    } // END Womens Button Pressed.
     
     
     // Co-Ed Button Pressed.
     @IBAction func coEdTapped(_ sender: Any) {
         selectLeague(leagueType: "coed")
-    }
-    // End Co-Ed Button Pressed.
+    } // End Co-Ed Button Pressed.
     
     
     // Select League Function-> Function to set league selected and Enable the Next Button.
     func selectLeague(leagueType: String) {
         player.desiredLeague = leagueType
         nextBtn.isEnabled = true
+    } // END Select League Function.
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let skillVC = segue.destination as? SkillVC {
+            // player from SkillVC = player from LeagueVC
+            skillVC.player = player
+        }
     }
-    // END Select League Function.
-    
-    
     /*
     // MARK: - Navigation
 
