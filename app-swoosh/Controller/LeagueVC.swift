@@ -10,6 +10,11 @@ import UIKit
 
 class LeagueVC: UIViewController {
     
+    /*
+     IBOutlets
+     */
+    
+    @IBOutlet weak var nextBtn: BorderButton!
     
     // View Did Load
     override func viewDidLoad() {
@@ -33,9 +38,21 @@ class LeagueVC: UIViewController {
         performSegue(withIdentifier: "SkillVCSegue", sender: self)
     }
     
+    // Mens Button Pressed.
+    @IBAction func mensTapped(_ sender: Any) {
+        
+        // Enable Next Button.
+        
+    }
     
+    // Womens Button Pressed.
+    @IBAction func womensTapped(_ sender: Any) {
+    }
     
-
+    // Co-Ed Button Pressed.
+    @IBAction func coEdTapped(_ sender: Any) {
+    }
+    
     
 
     /*
