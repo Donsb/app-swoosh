@@ -38,7 +38,7 @@ class LeagueVC: UIViewController {
     
     // Next Button Pressed.  Segue to SkillVC View Controller.
     @IBAction func onNextTapped(_ sender: Any) {
-        performSegue(withIdentifier: "SkillVCSegue", sender: self)
+        performSegue(withIdentifier: "skillVCSegue", sender: self)
     } // END Next Button Pressed.
     
     
