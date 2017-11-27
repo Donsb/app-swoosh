@@ -21,6 +21,7 @@ class LeagueVC: UIViewController {
     // View Did Load
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Create player.
         player = Player()
     }
     
@@ -73,6 +74,8 @@ class LeagueVC: UIViewController {
             skillVC.player = player
         }
     }
+    
+    
     /*
     // MARK: - Navigation
 
